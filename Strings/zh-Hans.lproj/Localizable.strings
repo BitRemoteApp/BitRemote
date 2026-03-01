@@ -6,6 +6,14 @@
 
 */
 
+// MARK: Accessibility
+"accessibility.upload" = "上传: %@";
+"accessibility.download" = "下载: %@";
+"accessibility.per_second" = "每秒 %@";
+"accessibility.bytes_per_second" = "Bytes per second";
+"accessibility.times" = "%@ 乘 %@";
+"accessibility.hint.double_tap_select" = "轻点两下以选择";
+
 // MARK: AlertView
 "loading_view.title.loading" = "加载中...";
 "loading_view.title.preparing_database" = "正在准备数据库...";
@@ -43,10 +51,14 @@
 "category.display_name.none" = "未分类";
 "category.display_name.custom" = "自定义";
 
+// MARK: TrackerDomain
+"tracker_domain.display_name.other" = "其他";
+
 // MARK: Common
 "common.title.done" = "完成";
 "common.title.select" = "选择";
 "common.title.cancel" = "取消";
+"common.title.continue" = "继续";
 "common.title.edit" = "编辑";
 "common.title.delete" = "删除";
 "common.title.website" = "官方网站";
@@ -61,16 +73,21 @@
 "common.title.leeches" = "吸血者";
 "common.title.tag" = "标签";
 "common.title.category" = "分类";
+"common.title.client" = "客户端";
 "common.title.progress" = "进度";
 "common.title.total_size" = "总容量";
 "common.title.download" = "下载";
+"common.title.savepath" = "文件保存位置";
 "common.title.download_speed" = "下载速度";
 "common.title.downloaded_size" = "已下载容量";
 "common.title.upload_speed" = "上传速度";
 "common.title.uploaded_size" = "已上传容量";
 "common.title.upload" = "上传";
+"common.title.bytes_per_second" = "B/s";
 "common.title.learn_more" = "更多内容";
 "common.title.view_error_info" = "查看错误信息";
+"common.title.new_task" = "添加任务";
+"common.title.filters" = "筛选";
 
 // MARK: Dialog
 "dialog.title.drop_database" = "你将失去这个 App 中所有的数据。\n确定要丢弃数据库吗？";
@@ -100,6 +117,8 @@
 "edit_client_view.section.description.one_time_password" = "某些安全功能例如双重认证，可能要求一次性密码。该字段将在成功登入后自动重置为空。";
 "edit_client_view.section.description.http_not_secure_message" = "请注意，HTTP 并不是一种安全的数据传输方式。为确保您信息和隐私的安全，我们强烈建议您使用 HTTPS。";
 "edit_client_view.section.description.disable_certificate_evaluation_message" = "关闭证书验证可能会使您暴露于重大的安全风险中，例如遭受中间人攻击和资料拦截。请仅在您完全理解其影响的前提下使用。";
+"edit_client_view.accessibility_hint.review_messages" = "在继续操作之前，请确认以下信息:";
+"edit_client_view.accessibility_hint.exclusive_client_type" = "不可用: BitRemote+ 专属客户端类型";
 
 // MARK: ErrorInfoView
 "error_info_view.title" = "错误信息";
@@ -114,20 +133,29 @@
 "error_info_view.placeholder.solution" = "目前对于这个错误，我们没有任何建议的解决方案。";
 "error_info_view.placeholder.context" = "这个错误中没有包含任何上下文信息。";
 
+// MARK: ClientPickerView
+"client_picker_view.title" = "处理文件";
+"client_picker_view.description.instruction" = "您已使用 BitRemote 打开文件。请选择应处理这些文件的客户端。";
+"client_picker_view.section_title.select_client" = "选择客户端";
+"client_picker_view.section_title.files" = "文件 (%lld)";
+"client_picker_view.label.hash" = "哈希值: %@";
+"client_picker_view.warning.selected_client_logging_in" = "此客户端仍在登录中。您可以继续操作，但操作可能会失败。";
+"client_picker_view.warning.selected_client_failed" = "此客户端连接失败。请在继续操作之前解决连接问题。";
+"client_picker_view.warning.add_client_first" = "请先添加客户端再打开文件。";
+
 // MARK: FiltersView
-"filters_view.title.filters" = "筛选";
 "filters_view.section_title.status" = "状态";
+"filters_view.section_title.tracker" = "Tracker";
 "filters_view.button.info" = "信息";
 "filters_view.button.new_category" = "添加分类";
 "filters_view.button.new_tag" = "添加标签";
 "filters_view.info_view.title.name" = "名称";
 "filters_view.info_view.section.title.setting" = "设置";
 // CategoryInfoView
-"category_info_view.title.savepath" = "文件保存位置";
 "category_info_view.prompt.name" = "分类名称";
 "category_info_view.prompt.savepath" = "/下载";
 "category_info_view.placeholder.name" = "新的分类";
-"category_info_view.placeholder.savepath" = "文件保存位置为空";
+"category_info_view.placeholder.savepath" = "下载文件夹为空";
 // TagInfoView
 "tag_info_view.prompt.name" = "标签名称";
 "tag_info_view.placeholder.name" = "新的标签";
@@ -137,7 +165,6 @@
 "menu_bar_extra.button.quit" = "退出";
 
 // MARK: NewTaskView
-"new_task_view.title" = "添加任务";
 "new_task_view.title.api_available" = "自 %@ 起可使用";
 "new_task_view.title.api_unavailable" = "自 %@ 起不可用";
 "new_task_view.title.relevant_files" = "相关文件:";
@@ -146,11 +173,17 @@
 "new_task_view.model.source_format.link" = "链接";
 "new_task_view.model.source_format.file" = "文件";
 "new_task_view.section.title.options" = "选项";
+"new_task_view.section.title.path" = "路径";
 "new_task_view.section.title.default_savepath" = "如果您不指定保存位置，将自动使用默认位置 **\"%@\"**。";
 "new_task_view.section.title.default_savepath_placeholder" = "(读取中...)";
-"new_task_view.title.savepath" = "文件保存位置";
 "new_task_view.prompt.savepath" = "/下载";
 "new_task_view.prompt.nas_savepath" = "共享文件夹/下载";
+"new_task_view.savepath_picker.option.custom" = "自定义";
+"new_task_view.savepath_picker.title.custom_savepath" = "自定义保存位置";
+"new_task_view.savepath_picker.button.add_to_bookmarks" = "添加到收藏夹";
+"new_task_view.savepath_picker.status.added_to_bookmarks" = "已添加到收藏夹";
+"new_task_view.savepath_picker.status.already_in_bookmarks" = "已在收藏夹中";
+"new_task_view.savepath_picker.status.failed_to_add_to_bookmarks" = "无法添加到收藏夹";
 "new_task_view.title.cookies" = "Cookies";
 "new_task_view.title.paused" = "以暂停状态添加";
 "new_task_view.model.aria2.download_piece_selection_algorithm.default" = "预设";
@@ -165,7 +198,7 @@
 "new_task_view.model.qBittorrent.torrent_content_layout.subfolder" = "创建子文件夹";
 "new_task_view.model.qBittorrent.torrent_content_layout.no_subfolder" = "不创建子文件夹";
 "new_task_view.aria2_form.title.allow_overwrite" = "允许覆盖";
-"new_task_view.aria2_form.title.max_download_limit" = "最大下载速度 (B/s)";
+"new_task_view.aria2_form.title.max_download_limit" = "最大下载速度 (%@)";
 "new_task_view.aria2_form.title.conditional_download" = "条件下载";
 "new_task_view.aria2_form.title.file_allocation_method" = "文件分配方法";
 "new_task_view.aria2_form.title.parameterized_URI" = "启用参数化 URI 支持";
@@ -175,7 +208,7 @@
 "new_task_view.aria2_form.title.split_count" = "单任务连接数";
 "new_task_view.aria2_form.title.min_split_size" = "最小文件分片大小 (Bytes)";
 "new_task_view.aria2_form.title.max_connection_per_server" = "单服务器最大连接数";
-"new_task_view.aria2_form.title.lowest_speed_limit" = "最小下载速度 (B/s)";
+"new_task_view.aria2_form.title.lowest_speed_limit" = "最小下载速度 (%@)";
 "new_task_view.aria2_form.title.piece_selection_algorithm" = "分片选择算法";
 "new_task_view.aria2_form.title.http_default_username" = "HTTP 默认用户名";
 "new_task_view.aria2_form.title.http_default_password" = "HTTP 默认密码";
@@ -184,9 +217,9 @@
 "new_task_view.aria2_form.title.proxy_password" = "代理服务器密码";
 "new_task_view.aria2_form.title.referer" = "请求来源";
 "new_task_view.aria2_form.title.custom_header" = "自定义请求头";
-"new_task_view.aria2_form.title.max_upload_limit" = "最大上传速度 (B/s)";
+"new_task_view.aria2_form.title.max_upload_limit" = "最大上传速度 (%@)";
 "new_task_view.aria2_form.title.max_peers" = "最大连接节点数";
-"new_task_view.aria2_form.title.preferred_download_speed" = "期望下载速度 (B/s)";
+"new_task_view.aria2_form.title.preferred_download_speed" = "期望下载速度 (%@)";
 "new_task_view.aria2_form.title.remove_unselected_file" = "删除未选择的文件";
 "new_task_view.aria2_form.title.stop_timeout" = "无速度时自动停止时间 (秒钟)";
 "new_task_view.aria2_form.title.bt_tracker" = "BT 服务器地址";
@@ -203,8 +236,8 @@
 "new_task_view.qBittorrent_form.title.root_folder" = "创建根目录";
 "new_task_view.qBittorrent_form.title.sequential_download" = "启用顺序下载";
 "new_task_view.qBittorrent_form.title.first_last_piece_prio" = "优先下载首尾文件块";
-"new_task_view.qBittorrent_form.title.up_limit" = "限制上传速率 (B/s)";
-"new_task_view.qBittorrent_form.title.dl_limit" = "限制下载速率 (B/s)";
+"new_task_view.qBittorrent_form.title.up_limit" = "限制上传速率 (%@)";
+"new_task_view.qBittorrent_form.title.dl_limit" = "限制下载速率 (%@)";
 "new_task_view.qBittorrent_form.title.ratio_limit" = "分享率上限";
 "new_task_view.qBittorrent_form.title.seeding_time_limit" = "限制做种时间 (分钟)";
 "new_task_view.transmission_form.title.labels" = "标签";
@@ -231,6 +264,8 @@
 // MARK: PagePicker
 "page_picker.title.page" = "页码 (%d / %d)";
 "page_picker.title.upper_bound" = "/ %d";
+"page_picker.accessibility_label.select_page" = "选择页面";
+"page_picker.accessibility_value.current_page" = "当前选中第 %d 页，共 %d 页";
 
 // MARK: Placeholder
 "placeholder.no_client_selected" = "未选择客户端";
@@ -251,6 +286,30 @@
 "general_setting_view.section.title.backup" = "备份";
 "general_setting_view.title.backup_clients" = "导出客户端备份";
 "general_setting_view.title.restore_clients" = "从备份中恢复客户端数据";
+"general_setting_view.title.manage_savepaths" = "管理文件保存位置";
+// AppActivityLogsView
+"app_activity_logs_view.title" = "App 活动记录";
+"app_activity_logs_view.accessibility_label.level" = "级别: %@";
+"app_activity_logs_view.accessibility_label.date" = "日期: %@";
+"app_activity_logs_view.accessibility_label.category" = "类别: %@";
+// SavepathSettingView
+"savepath_setting_view.title" = "文件保存位置";
+"savepath_setting_view.title.savepath_suggestion" = "保存位置建议";
+"savepath_setting_view.description.savepath_suggestion" = "在添加新任务时显示建议的文件保存位置";
+"savepath_setting_view.title.category_savepath_position" = "分类保存位置布局";
+"savepath_setting_view.description.category_savepath_position" = "选择你在分类中设置的文件保存位置在建议中的显示位置";
+"savepath_setting_view.section.title.bookmarks" = "收藏夹";
+"savepath_setting_view.button.new_savepath" = "添加保存位置";
+"savepath_setting_view.position.hidden" = "隐藏";
+"savepath_setting_view.position.top" = "顶部";
+"savepath_setting_view.position.bottom" = "底部";
+// AppearanceSettingView
+"appearance_setting_view.title" = "外观";
+"appearance_setting_view.title.color_scheme" = "配色";
+"appearance_setting_view.title.theme_color" = "主题色";
+"appearance_setting_view.section.title.tasks" = "任务";
+"appearance_setting_view.title.show_client_speed" = "显示客户端速度";
+"appearance_setting_view.title.show_free_space" = "显示剩余空间";
 // SubscriptionSettingView
 "subscription_setting_view.title" = "订阅";
 "subscription_setting_view.title.expires_on" = "%@ 到期";
@@ -265,15 +324,6 @@
 "subscription_setting_view.title.sync_purchases" = "同步已购买项目";
 "subscription_setting_view.title.restore_purchases" = "恢复已购买项目";
 "subscription_setting_view.subtitle.restore_purchases" = "更新收据并同步已购买项目";
-// AppActivityLogsView
-"app_activity_logs_view.title" = "App 活动记录";
-// AppearanceSettingView
-"appearance_setting_view.title" = "外观";
-"appearance_setting_view.title.color_scheme" = "配色";
-"appearance_setting_view.title.theme_color" = "主题色";
-"appearance_setting_view.section.title.tasks" = "任务";
-"appearance_setting_view.title.show_client_speed" = "显示客户端速度";
-"appearance_setting_view.title.show_free_space" = "显示剩余空间";
 // AppIconView
 "app_icon_view.title" = "App 图标";
 // AboutView
@@ -298,6 +348,11 @@
 "sidebar.button.edit_client.new" = "添加客户端";
 "sidebar.button.remove_ads" = "移除广告";
 "sidebar.button.no_ads_today" = "先移除一天";
+"sidebar.accessibility_label.learn_more_subscription" = "了解 BitRemote+";
+"sidebar.accessibility_value.warning_occurred" = "警告发生";
+"sidebar.accessibility_value.loading" = "加载中";
+// ClientCell
+"client_cell.accessibility_label.review_warning_message" = "查看警告信息";
 
 // MARK: TaskStatus
 "task.status.name.all" = "全部";
@@ -372,7 +427,6 @@
 "peer.property.title.port" = "端口";
 "peer.property.title.connection" = "连接";
 "peer.property.title.flags" = "标志";
-"peer.property.title.client" = "客户端";
 "peer.property.title.relevance" = "关联度";
 "peer.property.title.files" = "文件";
 
@@ -422,8 +476,12 @@
 "activity_monitor.board.title.queued_io_jobs" = "队列的 I/O 任务";
 "activity_monitor.board.title.average_time_in_queue" = "在队列的平均时间";
 "activity_monitor.board.title.total_queued_size" = "总队列容量";
+"activity_monitor.accessibility_label.seconds_before" = "%@ 秒前: %@";
+"activity_monitor.accessibility_label.upload_speed_limit" = "上传速度限制: %@";
+"activity_monitor.accessibility_label.download_speed_limit" = "下载速度限制: %@";
 // ClientStatusTray
 "client_status_tray.free_space" = "剩余空间";
+"client_status_tray.accessibility_label.connection_status" = "连接状态: %@";
 // ConnectionStatus
 "connection_status.value.unknown" = "未知";
 "connection_status.value.connected" = "已连接";
@@ -441,6 +499,12 @@
 "task_insight_panel.title.maximum" = "上限 %@";
 "task_insight_panel.title.total" = "总计 %@";
 "task_insight_panel.title.have" = "已完成 %@";
+"task_insight_panel.title.downloaded_size" = "已下载容量";
+"task_insight_panel.title.download_speed" = "下载速度";
+"task_insight_panel.title.download_speed_limit" = "下载速度上限";
+"task_insight_panel.title.uploaded_size" = "已上传容量";
+"task_insight_panel.title.upload_speed" = "上传速度";
+"task_insight_panel.title.upload_speed_limit" = "上传速度上限";
 "task_insight_panel.group.title.information" = "信息";
 "task_insight_panel.section.title.content" = "内容";
 "task_insight_panel.section.title.time" = "时间";
@@ -448,12 +512,20 @@
 "task_insight_panel.tab.title.trackers" = "Trackers";
 "task_insight_panel.title.downloads" = "下载";
 "task_insight_panel.tab.title.files" = "文件";
+"task_insight_panel.accessibility_label.progress_wall" = "未开始: %d, 进行中: %d, 已完成: %d";
+"task_insight_panel.accessibility_label.client_name" = "客户端名称";
+"task_insight_panel.accessibility_label.not_selected" = "未选择";
+"task_insight_panel.accessibility_label.partially_selected" = "已选择部分";
+"task_insight_panel.accessibility_label.all_selected" = "已选择全部";
 // KeySortPicker
 "key_sort_picker.title.sort" = "排序";
 "key_sort_picker.title.sort_tasks" = "排序（任务）";
 "key_sort_picker.title.sort_trackers" = "排序（Trackers）";
 "key_sort_picker.title.sort_peers" = "排序（用戶）";
 "key_sort_picker.title.sort_files" = "排序 (文件)";
+"key_sort_picker.title.more_actions" = "更多操作";
+"key_sort_picker.accessibility_value.ascending" = "升序";
+"key_sort_picker.accessibility_value.descending" = "降序";
 // TransferChart
 "transfer_chart.title" = "传输记录";
 "transfer_chart.title.date" = "日期";
@@ -470,6 +542,15 @@
 
 // FeaturesShowcaseView
 "features_showcase_view.title" = "%@\n探索新功能";
+
+"features_showcase_view.version150.title.file_system_integration" = "文件系统集成";
+"features_showcase_view.version150.subtitle.file_system_integration" = "在操作系统中用 BitRemote 直接打开文件，或将文件分享到 BitRemote，即可添加任务。";
+"features_showcase_view.version150.title.savepath_suggestions" = "保存位置建议";
+"features_showcase_view.version150.subtitle.savepath_suggestions" = "通过建议列表更快选择文件保存位置，不必每次都手动输入。除了收藏夹中的保存位置，分类中设置的保存位置也会显示在建议中。";
+"features_showcase_view.version150.title.tracker_filtering" = "Tracker 筛选";
+"features_showcase_view.version150.subtitle.tracker_filtering" = "按 Tracker 筛选任务，方便查看并管理特定 Tracker 的任务。";
+"features_showcase_view.version150.title.accessibility_improvements" = "辅助功能改进";
+"features_showcase_view.version150.subtitle.accessibility_improvements" = "改进旁白支持，并更好地支持语音控制和减弱动态效果。";
 
 "features_showcase_view.version140.title.task_insight_panel" = "任务详情面板";
 "features_showcase_view.version140.subtitle.task_insight_panel" = "清楚掌握下载任务的进度与性能状况，同时也能查看 trackers、用户与文件，全面了解任务状态。";

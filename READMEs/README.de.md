@@ -28,6 +28,8 @@ App Strings: [{lang}.lproj](/Strings)
 
 GitHub Readme: [README.{lang}.md](/READMEs)
 
+Website `bitremote.app`: [{lang}.json](https://github.com/BitRemoteApp/bitremote-website/tree/main/src/messages)
+
 ### Contributors
 | | |
 | - | - |
@@ -37,7 +39,7 @@ GitHub Readme: [README.{lang}.md](/READMEs)
 ### Contributor Reward
 Contributors who meet all the following criteria are eligible to request up to 3 redeem codes each year for a BitRemote+ yearly membership:
 - The contributor must have made at least one contribution within the past year that has been included in a BitRemote public release
-- The contributor’s total contributions must exceed 300 lines
+- The contributor's total contributions must exceed 300 lines
 
 If redeem codes are temporarily unavailable, eligible contributors will need to wait until codes are restocked. Contributors can still inquire about the remaining available codes prior to making a contribution.
 
@@ -57,4 +59,4 @@ Diese App erfordert iOS / iPadOS / macOS 26.0 oder neuer.
 [![Telegram](https://img.shields.io/badge/Telegram-858585?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/bitremote)
 
 ## App Icon
-Copyright © 2025 Ark Studios LLC.
+Copyright © 2026 Ark Studios LLC.

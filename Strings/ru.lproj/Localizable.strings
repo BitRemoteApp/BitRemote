@@ -6,6 +6,14 @@
 
 */
 
+// MARK: Accessibility
+"accessibility.upload" = "Upload: %@";
+"accessibility.download" = "Download: %@";
+"accessibility.per_second" = "%@ per second";
+"accessibility.bytes_per_second" = "Bytes per second";
+"accessibility.times" = "%@ times %@";
+"accessibility.hint.double_tap_select" = "Double-tap to select";
+
 // MARK: AlertView
 "loading_view.title.loading" = "Загрузка...";
 "loading_view.title.preparing_database" = "Подготовка базы данных...";
@@ -43,10 +51,14 @@
 "category.display_name.none" = "Нет";
 "category.display_name.custom" = "Пользовательский";
 
+// MARK: TrackerDomain
+"tracker_domain.display_name.other" = "Other";
+
 // MARK: Common
 "common.title.done" = "Готово";
 "common.title.select" = "Выбрать";
 "common.title.cancel" = "Отмена";
+"common.title.continue" = "Continue";
 "common.title.edit" = "Редактировать";
 "common.title.delete" = "Удалить";
 "common.title.website" = "Веб-сайт";
@@ -61,16 +73,21 @@
 "common.title.leeches" = "Личи";
 "common.title.tag" = "Тег";
 "common.title.category" = "Категория";
+"common.title.client" = "Клиент";
 "common.title.progress" = "Прогресс";
 "common.title.total_size" = "Общий размер";
 "common.title.download" = "Загрузка";
+"common.title.savepath" = "Путь сохранения";
 "common.title.download_speed" = "Скорость скачивания";
 "common.title.downloaded_size" = "Загружено";
 "common.title.upload_speed" = "Скорость отдачи";
 "common.title.uploaded_size" = "Отдано";
 "common.title.upload" = "Отдача";
+"common.title.bytes_per_second" = "Б/с";
 "common.title.learn_more" = "Подробнее";
 "common.title.view_error_info" = "Подробнее";
+"common.title.new_task" = "Новая задача";
+"common.title.filters" = "Фильтр";
 
 // MARK: Dialog
 "dialog.title.drop_database" = "Вы потеряете все свои данные в этом приложении.\nВы уверены, что хотите удалить базу данных?";
@@ -100,6 +117,8 @@
 "edit_client_view.section.description.one_time_password" = "Одноразовый пароль может использоваться в рамках некоторых функций безопасности, таких как двухфакторная аутентификация. После успешной попытки входа это поле будет автоматически сброшено.";
 "edit_client_view.section.description.http_not_secure_message" = "Имейте в виду, что использование HTTP не является безопасным способом передачи данных. Настоятельно рекомендуется использовать HTTPS для обеспечения безопасности вашей информации и защиты вашей конфиденциальности.";
 "edit_client_view.section.description.disable_certificate_evaluation_message" = "Отключение проверки сертификата может подвергнуть вас значительным рискам безопасности, таким как уязвимость для атак MITM и перехват данных. Продолжайте, только если вы полностью понимаете последствия.";
+"edit_client_view.accessibility_hint.review_messages" = "Before continuing, please review the following message:";
+"edit_client_view.accessibility_hint.exclusive_client_type" = "Unavailable: BitRemote+ exclusive client type.";
 
 // MARK: ErrorInfoView
 "error_info_view.title" = "Информация об ошибке";
@@ -114,16 +133,25 @@
 "error_info_view.placeholder.solution" = "В настоящее время у нас нет готового решения для этой ошибки.";
 "error_info_view.placeholder.context" = "В этой ошибке нет контекста.";
 
+// MARK: ClientPickerView
+"client_picker_view.title" = "Handle files";
+"client_picker_view.description.instruction" = "You've opened files with BitRemote. Please select which client should handle these files.";
+"client_picker_view.section_title.select_client" = "Select client";
+"client_picker_view.section_title.files" = "Files (%lld)";
+"client_picker_view.label.hash" = "Hash: %@";
+"client_picker_view.warning.selected_client_logging_in" = "This client is still logging in. You may continue, but the operation might fail.";
+"client_picker_view.warning.selected_client_failed" = "This client failed to connect. Please resolve the connection issue before continuing.";
+"client_picker_view.warning.add_client_first" = "Please add a client before opening files.";
+
 // MARK: FiltersView
-"filters_view.title.filters" = "Фильтр";
 "filters_view.section_title.status" = "Статус";
+"filters_view.section_title.tracker" = "Tracker";
 "filters_view.button.info" = "Инфо";
 "filters_view.button.new_category" = "Новая категория";
 "filters_view.button.new_tag" = "Новый тег";
 "filters_view.info_view.title.name" = "Имя";
 "filters_view.info_view.section.title.setting" = "Настройки";
 // CategoryInfoView
-"category_info_view.title.savepath" = "Путь сохранения";
 "category_info_view.prompt.name" = "Имя категории";
 "category_info_view.prompt.savepath" = "/downloads";
 "category_info_view.placeholder.name" = "Новая категория";
@@ -137,18 +165,23 @@
 "menu_bar_extra.button.quit" = "Выйти";
 
 // MARK: NewTaskView
-"new_task_view.title" = "Новая задача";
 "new_task_view.title.api_available" = "Доступно с %@";
 "new_task_view.title.api_unavailable" = "Недоступно с %@";
 "new_task_view.title.relevant_files" = "Соответствующий(е) файл(ы):";
 "new_task_view.title.relevant_file_line" = "- %@";
 "new_task_view.title.processing_requests" = "Обработка запросов... (%@/%@)";
 "new_task_view.section.title.options" = "Опции";
+"new_task_view.section.title.path" = "Path";
 "new_task_view.section.title.default_savepath" = "Если вы не укажете папку, по умолчанию будет использоваться место загрузки **\"%@\"**.";
 "new_task_view.section.title.default_savepath_placeholder" = "(загрузка...)";
-"new_task_view.title.savepath" = "Папка загрузки";
 "new_task_view.prompt.savepath" = "/downloads";
 "new_task_view.prompt.nas_savepath" = "SharedFolder/Downloads";
+"new_task_view.savepath_picker.option.custom" = "Custom";
+"new_task_view.savepath_picker.title.custom_savepath" = "Custom savepath";
+"new_task_view.savepath_picker.button.add_to_bookmarks" = "Add to bookmarks";
+"new_task_view.savepath_picker.status.added_to_bookmarks" = "Added to bookmarks";
+"new_task_view.savepath_picker.status.already_in_bookmarks" = "Already in bookmarks";
+"new_task_view.savepath_picker.status.failed_to_add_to_bookmarks" = "Failed to add to bookmarks";
 "new_task_view.title.cookies" = "Cookies";
 "new_task_view.title.paused" = "Добавить как приостановленное";
 "new_task_view.model.source_format.link" = "Ссылка";
@@ -165,7 +198,7 @@
 "new_task_view.model.qBittorrent.torrent_content_layout.subfolder" = "Создать подпапку";
 "new_task_view.model.qBittorrent.torrent_content_layout.no_subfolder" = "Не создавать подпапку";
 "new_task_view.aria2_form.title.allow_overwrite" = "Разрешить перезапись";
-"new_task_view.aria2_form.title.max_download_limit" = "Максимальный лимит загрузки (Б/с)";
+"new_task_view.aria2_form.title.max_download_limit" = "Максимальный лимит загрузки (%@)";
 "new_task_view.aria2_form.title.conditional_download" = "Условная загрузка";
 "new_task_view.aria2_form.title.file_allocation_method" = "Метод выделения файла";
 "new_task_view.aria2_form.title.parameterized_URI" = "Параметризованный URI";
@@ -175,7 +208,7 @@
 "new_task_view.aria2_form.title.split_count" = "Количество частей";
 "new_task_view.aria2_form.title.min_split_size" = "Минимальный размер части (байты)";
 "new_task_view.aria2_form.title.max_connection_per_server" = "Максимальное количество подключений к серверу";
-"new_task_view.aria2_form.title.lowest_speed_limit" = "Минимальный лимит скорости (Б/с)";
+"new_task_view.aria2_form.title.lowest_speed_limit" = "Минимальный лимит скорости (%@)";
 "new_task_view.aria2_form.title.piece_selection_algorithm" = "Алгоритм выбора частей";
 "new_task_view.aria2_form.title.http_default_username" = "Имя пользователя по умолчанию для HTTP";
 "new_task_view.aria2_form.title.http_default_password" = "Пароль по умолчанию для HTTP";
@@ -184,9 +217,9 @@
 "new_task_view.aria2_form.title.proxy_password" = "Пароль прокси";
 "new_task_view.aria2_form.title.referer" = "Реферер";
 "new_task_view.aria2_form.title.custom_header" = "Пользовательский заголовок";
-"new_task_view.aria2_form.title.max_upload_limit" = "Максимальный лимит отдачи (Б/с)";
+"new_task_view.aria2_form.title.max_upload_limit" = "Максимальный лимит отдачи (%@)";
 "new_task_view.aria2_form.title.max_peers" = "Максимальное количество пиров";
-"new_task_view.aria2_form.title.preferred_download_speed" = "Предпочтительная скорость загрузки (Б/с)";
+"new_task_view.aria2_form.title.preferred_download_speed" = "Предпочтительная скорость загрузки (%@)";
 "new_task_view.aria2_form.title.remove_unselected_file" = "Удалить невыбранный файл";
 "new_task_view.aria2_form.title.stop_timeout" = "Тайм-аут остановки (сек)";
 "new_task_view.aria2_form.title.bt_tracker" = "BT трекер";
@@ -203,8 +236,8 @@
 "new_task_view.qBittorrent_form.title.root_folder" = "Создать корневую папку";
 "new_task_view.qBittorrent_form.title.sequential_download" = "Включить последовательную загрузку";
 "new_task_view.qBittorrent_form.title.first_last_piece_prio" = "Приоритет первой и последней части";
-"new_task_view.qBittorrent_form.title.up_limit" = "Лимит скорости отдачи (Б/с)";
-"new_task_view.qBittorrent_form.title.dl_limit" = "Лимит скорости скачивания (Б/с)";
+"new_task_view.qBittorrent_form.title.up_limit" = "Лимит скорости отдачи (%@)";
+"new_task_view.qBittorrent_form.title.dl_limit" = "Лимит скорости скачивания (%@)";
 "new_task_view.qBittorrent_form.title.ratio_limit" = "Лимит соотношения раздачи";
 "new_task_view.qBittorrent_form.title.seeding_time_limit" = "Лимит времени раздачи (мин)";
 "new_task_view.transmission_form.title.labels" = "Метки";
@@ -231,6 +264,8 @@
 // MARK: PagePicker
 "page_picker.title.page" = "Страница (%d / %d)";
 "page_picker.title.upper_bound" = "/ %d";
+"page_picker.accessibility_label.select_page" = "Select page";
+"page_picker.accessibility_value.current_page" = "Current page is %d out of %d.";
 
 // MARK: Placeholder
 "placeholder.no_client_selected" = "Клиент не выбран.";
@@ -251,6 +286,30 @@
 "general_setting_view.section.title.backup" = "Резервное копирование";
 "general_setting_view.title.backup_clients" = "Экспорт резервной копии клиентов";
 "general_setting_view.title.restore_clients" = "Восстановить клиентов из резервной копии";
+"general_setting_view.title.manage_savepaths" = "Manage savepaths";
+// AppActivityLogsView
+"app_activity_logs_view.title" = "Журнал активности приложения";
+"app_activity_logs_view.accessibility_label.level" = "Level: %@";
+"app_activity_logs_view.accessibility_label.date" = "Date: %@";
+"app_activity_logs_view.accessibility_label.category" = "Category: %@";
+// SavepathSettingView
+"savepath_setting_view.title" = "Savepaths";
+"savepath_setting_view.title.savepath_suggestion" = "Savepath suggestion";
+"savepath_setting_view.description.savepath_suggestion" = "Show suggested savepaths when adding a new task.";
+"savepath_setting_view.title.category_savepath_position" = "Category savepath position";
+"savepath_setting_view.description.category_savepath_position" = "Choose where savepaths defined in your categories appear in suggestions.";
+"savepath_setting_view.section.title.bookmarks" = "Bookmarks";
+"savepath_setting_view.button.new_savepath" = "New savepath";
+"savepath_setting_view.position.hidden" = "Hidden";
+"savepath_setting_view.position.top" = "Top";
+"savepath_setting_view.position.bottom" = "Bottom";
+// AppearanceSettingView
+"appearance_setting_view.title" = "Внешний вид";
+"appearance_setting_view.title.color_scheme" = "Цветовая схема";
+"appearance_setting_view.title.theme_color" = "Цвет темы";
+"appearance_setting_view.section.title.tasks" = "Задачи";
+"appearance_setting_view.title.show_client_speed" = "Показывать скорость клиента";
+"appearance_setting_view.title.show_free_space" = "Показывать свободное место";
 // SubscriptionSettingView
 "subscription_setting_view.title" = "Подписка";
 "subscription_setting_view.title.expires_on" = "Истекает %@";
@@ -265,15 +324,6 @@
 "subscription_setting_view.title.sync_purchases" = "Синхронизация покупок";
 "subscription_setting_view.title.restore_purchases" = "Восстановить покупки";
 "subscription_setting_view.subtitle.restore_purchases" = "Обновить чек и синхронизировать покупки";
-// AppActivityLogsView
-"app_activity_logs_view.title" = "Журнал активности приложения";
-// AppearanceSettingView
-"appearance_setting_view.title" = "Внешний вид";
-"appearance_setting_view.title.color_scheme" = "Цветовая схема";
-"appearance_setting_view.title.theme_color" = "Цвет темы";
-"appearance_setting_view.section.title.tasks" = "Задачи";
-"appearance_setting_view.title.show_client_speed" = "Показывать скорость клиента";
-"appearance_setting_view.title.show_free_space" = "Показывать свободное место";
 // AppIconView
 "app_icon_view.title" = "Иконка приложения";
 // AboutView
@@ -298,6 +348,11 @@
 "sidebar.button.edit_client.new" = "Добавить";
 "sidebar.button.remove_ads" = "Убрать рекламу";
 "sidebar.button.no_ads_today" = "Реклама закончилась";
+"sidebar.accessibility_label.learn_more_subscription" = "Learn more about BitRemote+";
+"sidebar.accessibility_value.warning_occurred" = "Warning occurred";
+"sidebar.accessibility_value.loading" = "Loading";
+// ClientCell
+"client_cell.accessibility_label.review_warning_message" = "Review warning message";
 
 // MARK: TaskStatus
 "task.status.name.all" = "Все";
@@ -372,7 +427,6 @@
 "peer.property.title.port" = "Порт";
 "peer.property.title.connection" = "Соединение";
 "peer.property.title.flags" = "Флаги";
-"peer.property.title.client" = "Клиент";
 "peer.property.title.relevance" = "Релевантность";
 "peer.property.title.files" = "Файлы";
 
@@ -422,8 +476,12 @@
 "activity_monitor.board.title.queued_io_jobs" = "Ожидающие I/O задачи";
 "activity_monitor.board.title.average_time_in_queue" = "Среднее время в очереди";
 "activity_monitor.board.title.total_queued_size" = "Общий размер в очереди";
+"activity_monitor.accessibility_label.seconds_before" = "%@ seconds before: %@";
+"activity_monitor.accessibility_label.upload_speed_limit" = "Upload speed limit: %@";
+"activity_monitor.accessibility_label.download_speed_limit" = "Download speed limit: %@";
 // ClientStatusTray
 "client_status_tray.free_space" = "Свободное место";
+"client_status_tray.accessibility_label.connection_status" = "Connection status: %@";
 // ConnectionStatus
 "connection_status.value.unknown" = "Неизвестно";
 "connection_status.value.connected" = "Подключено";
@@ -441,6 +499,12 @@
 "task_insight_panel.title.maximum" = "макс. %@";
 "task_insight_panel.title.total" = "итого %@";
 "task_insight_panel.title.have" = "имеется %@";
+"task_insight_panel.title.downloaded_size" = "Загружено";
+"task_insight_panel.title.download_speed" = "Скорость скачивания";
+"task_insight_panel.title.download_speed_limit" = "Ограничение скорости скачивания";
+"task_insight_panel.title.uploaded_size" = "Отдано";
+"task_insight_panel.title.upload_speed" = "Скорость отдачи";
+"task_insight_panel.title.upload_speed_limit" = "Ограничение скорости отдачи";
 "task_insight_panel.group.title.information" = "Информация";
 "task_insight_panel.section.title.content" = "Содержимое";
 "task_insight_panel.section.title.time" = "Время";
@@ -448,12 +512,20 @@
 "task_insight_panel.tab.title.trackers" = "Трекеры";
 "task_insight_panel.title.downloads" = "Загрузки";
 "task_insight_panel.tab.title.files" = "Файлы";
+"task_insight_panel.accessibility_label.progress_wall" = "Not started: %d, In progress: %d, Finished: %d";
+"task_insight_panel.accessibility_label.client_name" = "Client name";
+"task_insight_panel.accessibility_label.not_selected" = "Not selected";
+"task_insight_panel.accessibility_label.partially_selected" = "Partially selected";
+"task_insight_panel.accessibility_label.all_selected" = "All selected";
 // KeySortPicker
 "key_sort_picker.title.sort" = "Сортировка";
 "key_sort_picker.title.sort_tasks" = "Сортировка (задачи)";
 "key_sort_picker.title.sort_trackers" = "Сортировка (трекеры)";
 "key_sort_picker.title.sort_peers" = "Сортировка (пиры)";
 "key_sort_picker.title.sort_files" = "Сортировка (файлы)";
+"key_sort_picker.title.more_actions" = "More actions";
+"key_sort_picker.accessibility_value.ascending" = "Ascending";
+"key_sort_picker.accessibility_value.descending" = "Descending";
 // TransferChart
 "transfer_chart.title" = "История передачи";
 "transfer_chart.title.date" = "Дата";
@@ -470,6 +542,15 @@
 
 // FeaturesShowcaseView
 "features_showcase_view.title" = "Открыть в\n%@";
+
+"features_showcase_view.version150.title.file_system_integration" = "File system integration";
+"features_showcase_view.version150.subtitle.file_system_integration" = "Open files directly from your operating system in BitRemote or share them to BitRemote to add a new task.";
+"features_showcase_view.version150.title.savepath_suggestions" = "Savepath suggestions";
+"features_showcase_view.version150.subtitle.savepath_suggestions" = "Choose a savepath faster with suggestions, instead of typing it every time. Use bookmarked savepaths, and include savepaths from your categories in the order you prefer.";
+"features_showcase_view.version150.title.tracker_filtering" = "Tracker filtering";
+"features_showcase_view.version150.subtitle.tracker_filtering" = "Filter tasks by tracker so you can view and manage tasks for a specific tracker.";
+"features_showcase_view.version150.title.accessibility_improvements" = "Accessibility improvements";
+"features_showcase_view.version150.subtitle.accessibility_improvements" = "Improved VoiceOver support, with better support for Voice Control and Reduce Motion.";
 
 "features_showcase_view.version140.title.task_insight_panel" = "Панель анализа задач";
 "features_showcase_view.version140.subtitle.task_insight_panel" = "Получайте наглядное представление о задачах загрузки с информацией о прогрессе и производительности в реальном времени. Также доступны обзоры трекеров, пиров и файлов для полной картины.";

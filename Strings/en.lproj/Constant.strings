@@ -9,7 +9,7 @@
 // MARK: App
 "app.name" = "BitRemote";
 "app.website" = "https://bitremote.app";
-"app.copyright" = "Copyright © 2025 Ark Studios LLC.";
+"app.copyright" = "Copyright © 2026 Ark Studios LLC.";
 "app.short_version" = "%@ (%@)";
 "app.sns" = "SNS";
 "app.plus_mark" = "+";
@@ -39,41 +39,39 @@
 "app.translation_contributor.title.Sharkboy-j" = "Sharkboy";
 
 // Translation subtitle
-"app.translation_contributor.subtitle.traditional_chinese_taiwan" = "🇹🇼 正體中文";
+"app.translation_contributor.subtitle.traditional_chinese_taiwan" = "🇹🇼 台灣華語";
 "app.translation_contributor.subtitle.russian" = "🇷🇺 Русский";
 
 // Acknowledgements links
 "app.acknowledgement.link.jwt_kit" = "https://github.com/vapor/jwt-kit";
+"app.acknowledgement.link.fair_flag" = "https://github.com/tatsuz0u/FairFlag";
 "app.acknowledgement.link.bencode" = "https://github.com/danieltmbr/Bencode";
 "app.acknowledgement.link.swift_gen" = "https://github.com/SwiftGen/SwiftGen";
 "app.acknowledgement.link.split_view" = "https://github.com/stevengharris/SplitView";
 "app.acknowledgement.link.alamofire" = "https://github.com/Alamofire/Alamofire";
 "app.acknowledgement.link.xml_coder" = "https://github.com/CoreOffice/XMLCoder";
 "app.acknowledgement.link.whats_new_kit" = "https://github.com/SvenTiigi/WhatsNewKit";
-"app.acknowledgement.link.onboarding_kit" = "https://github.com/JamesSedlacek/OnboardingKit";
 "app.acknowledgement.link.admob_swiftUI" = "https://github.com/dearhui/AdmobSwiftUI";
 "app.acknowledgement.link.sf_safe_symbols" = "https://github.com/SFSafeSymbols/SFSafeSymbols";
 "app.acknowledgement.link.swift_navigation" = "https://github.com/pointfreeco/swift-navigation";
-"app.acknowledgement.link.swiftUI_introspect" = "https://github.com/siteline/swiftui-introspect";
 "app.acknowledgement.link.system_notification" = "https://github.com/danielsaidi/SystemNotification";
-"app.acknowledgement.link.swiftUI_any_subviews" = "https://github.com/Lumisilk/SwiftUI-AnySubviews";
+"app.acknowledgement.link.swiftUI_onboarding" = "https://github.com/JamesSedlacek/SwiftUI-Onboarding";
 "app.acknowledgement.link.tca" = "https://github.com/pointfreeco/swift-composable-architecture";
 
 // Acknowledgements titles
 "app.acknowledgement.title.jwt_kit" = "JWTKit";
+"app.acknowledgement.title.fair_flag" = "FairFlag";
 "app.acknowledgement.title.bencode" = "Bencode";
 "app.acknowledgement.title.swift_gen" = "SwiftGen";
 "app.acknowledgement.title.split_view" = "SplitView";
 "app.acknowledgement.title.alamofire" = "Alamofire";
 "app.acknowledgement.title.xml_coder" = "XMLCoder";
 "app.acknowledgement.title.whats_new_kit" = "WhatsNewKit";
-"app.acknowledgement.title.onboarding_kit" = "OnboardingKit";
 "app.acknowledgement.title.admob_swiftUI" = "AdmobSwiftUI";
 "app.acknowledgement.title.sf_safe_symbols" = "SFSafeSymbols";
 "app.acknowledgement.title.swift_navigation" = "Swift Navigation";
-"app.acknowledgement.title.swiftUI_introspect" = "SwiftUI Introspect";
 "app.acknowledgement.title.system_notification" = "SystemNotification";
-"app.acknowledgement.title.swiftUI_any_subviews" = "SwiftUI-AnySubviews";
+"app.acknowledgement.title.swiftUI_onboarding" = "SwiftUI-Onboarding";
 "app.acknowledgement.title.tca" = "The Composable Architecture";
 
 // MARK: Common

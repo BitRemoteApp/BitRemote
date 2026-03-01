@@ -28,6 +28,8 @@ App Strings: [{lang}.lproj](/Strings)
 
 GitHub Readme: [README.{lang}.md](/READMEs)
 
+Website `bitremote.app`: [{lang}.json](https://github.com/BitRemoteApp/bitremote-website/tree/main/src/messages)
+
 ### 貢獻者
 | | |
 | - | - |
@@ -57,4 +59,4 @@ GitHub Readme: [README.{lang}.md](/READMEs)
 [![Telegram](https://img.shields.io/badge/Telegram-858585?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/bitremote)
 
 ## 應用程式圖示
-Copyright © 2025 Ark Studios LLC.
+Copyright © 2026 Ark Studios LLC.

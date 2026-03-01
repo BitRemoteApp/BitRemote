@@ -6,6 +6,14 @@
 
 */
 
+// MARK: Accessibility
+"accessibility.upload" = "上り: %@";
+"accessibility.download" = "下り: %@";
+"accessibility.per_second" = "%@ 毎秒";
+"accessibility.bytes_per_second" = "Bytes per second";
+"accessibility.times" = "%@ かける %@";
+"accessibility.hint.double_tap_select" = "ダブルタップで選択";
+
 // MARK: AlertView
 "loading_view.title.loading" = "読み込み中...";
 "loading_view.title.preparing_database" = "データベース準備中...";
@@ -43,10 +51,14 @@
 "category.display_name.none" = "カテゴリなし";
 "category.display_name.custom" = "カスタム";
 
+// MARK: TrackerDomain
+"tracker_domain.display_name.other" = "その他";
+
 // MARK: Common
 "common.title.done" = "完了";
 "common.title.select" = "選択";
 "common.title.cancel" = "キャンセル";
+"common.title.continue" = "次へ";
 "common.title.edit" = "編集";
 "common.title.delete" = "削除";
 "common.title.website" = "ウェブサイト";
@@ -61,16 +73,21 @@
 "common.title.leeches" = "リーチ";
 "common.title.tag" = "タグ";
 "common.title.category" = "カテゴリ";
+"common.title.client" = "クライアント";
 "common.title.progress" = "進捗";
 "common.title.total_size" = "全体サイズ";
 "common.title.download" = "ダウンロード";
+"common.title.savepath" = "ファイルの保存先";
 "common.title.download_speed" = "下り速度";
 "common.title.downloaded_size" = "ダウンロード済みサイズ";
 "common.title.upload_speed" = "上り速度";
 "common.title.uploaded_size" = "アップロード済みサイズ";
 "common.title.upload" = "アップロード";
+"common.title.bytes_per_second" = "B/s";
 "common.title.learn_more" = "詳しい情報";
 "common.title.view_error_info" = "エラー情報を確認";
+"common.title.new_task" = "新規タスク";
+"common.title.filters" = "絞り込み";
 
 // MARK: Dialog
 "dialog.title.drop_database" = "本アプリでのすべてのデータを失うことになります。\n本当にデータベースを削除してもよろしいですか？";
@@ -100,6 +117,8 @@
 "edit_client_view.section.description.one_time_password" = "ワンタイムパスワードは、二要素認証などのセキュリティ機能の一部として利用される場合があります。ログインが成功した後、このフィールドは自動的にリセットされます。";
 "edit_client_view.section.description.http_not_secure_message" = "HTTP は、データを安全に伝送する方法ではありません。お客様の情報の安全性を確保し、プライバシーを保護するために、HTTPS を使用することを強くお勧めします。";
 "edit_client_view.section.description.disable_certificate_evaluation_message" = "証明書の検証を無効にすると、中間者攻撃やデータの傍受など、重大なセキュリティリスクにさらされる可能性があります。この設定は、影響を完全に理解した前提でご利用ください。";
+"edit_client_view.accessibility_hint.review_messages" = "続行する前に、次のメッセージをご確認ください:";
+"edit_client_view.accessibility_hint.exclusive_client_type" = "利用不可: BitRemote+ 専用クライアントタイプ";
 
 // MARK: ErrorInfoView
 "error_info_view.title" = "エラー情報";
@@ -114,20 +133,29 @@
 "error_info_view.placeholder.solution" = "このエラーを解決するための提案はありません。";
 "error_info_view.placeholder.context" = "このエラーには背景情報が含まれていません。";
 
+// MARK: ClientPickerView
+"client_picker_view.title" = "ファイルの処理";
+"client_picker_view.description.instruction" = "BitRemote でファイルを開きました。これらのファイルを処理するクライアントを選択してください。";
+"client_picker_view.section_title.select_client" = "クライアントを選択";
+"client_picker_view.section_title.files" = "ファイル (%lld)";
+"client_picker_view.label.hash" = "ハッシュ: %@";
+"client_picker_view.warning.selected_client_logging_in" = "このクライアントはまだログイン中です。続行できますが、操作が失敗する可能性があります。";
+"client_picker_view.warning.selected_client_failed" = "このクライアントの接続に失敗しました。続行する前に接続の問題を解決してください。";
+"client_picker_view.warning.add_client_first" = "ファイルを開く前にクライアントを追加してください。";
+
 // MARK: FiltersView
-"filters_view.title.filters" = "フィルター";
 "filters_view.section_title.status" = "状態";
+"filters_view.section_title.tracker" = "トラッカー";
 "filters_view.button.info" = "情報";
 "filters_view.button.new_category" = "新規カテゴリ";
 "filters_view.button.new_tag" = "新規タグ";
 "filters_view.info_view.title.name" = "名前";
 "filters_view.info_view.section.title.setting" = "設定";
 // CategoryInfoView
-"category_info_view.title.savepath" = "ファイルの保存先";
 "category_info_view.prompt.name" = "カテゴリ名";
 "category_info_view.prompt.savepath" = "/ダウンロード";
 "category_info_view.placeholder.name" = "新規カテゴリ";
-"category_info_view.placeholder.savepath" = "ファイルの保存先なし";
+"category_info_view.placeholder.savepath" = "ダウンロードフォルダなし";
 // TagInfoView
 "tag_info_view.prompt.name" = "タグ名";
 "tag_info_view.placeholder.name" = "新規タグ";
@@ -137,7 +165,6 @@
 "menu_bar_extra.button.quit" = "終了";
 
 // MARK: NewTaskView
-"new_task_view.title" = "新規タスク";
 "new_task_view.title.api_available" = "%@ から利用可能";
 "new_task_view.title.api_unavailable" = "%@ から利用不可";
 "new_task_view.title.relevant_files" = "該当するファイル:";
@@ -146,11 +173,17 @@
 "new_task_view.model.source_format.link" = "リンク";
 "new_task_view.model.source_format.file" = "ファイル";
 "new_task_view.section.title.options" = "オプション";
+"new_task_view.section.title.path" = "パス";
 "new_task_view.section.title.default_savepath" = "保存先を指定しない場合、既定値 **\"%@\"** が自動的に使用されます。";
 "new_task_view.section.title.default_savepath_placeholder" = "(読み込み中...)";
-"new_task_view.title.savepath" = "ファイルの保存先";
 "new_task_view.prompt.savepath" = "/ダウンロード";
 "new_task_view.prompt.nas_savepath" = "共有フォルダ/ダウンロード";
+"new_task_view.savepath_picker.option.custom" = "カスタム";
+"new_task_view.savepath_picker.title.custom_savepath" = "カスタム保存先";
+"new_task_view.savepath_picker.button.add_to_bookmarks" = "ブックマークに追加";
+"new_task_view.savepath_picker.status.added_to_bookmarks" = "ブックマークに追加完了";
+"new_task_view.savepath_picker.status.already_in_bookmarks" = "すでにブックマーク済み";
+"new_task_view.savepath_picker.status.failed_to_add_to_bookmarks" = "ブックマークに追加失敗";
 "new_task_view.title.cookies" = "クッキー";
 "new_task_view.title.paused" = "一時停止中として追加";
 "new_task_view.model.aria2.download_piece_selection_algorithm.default" = "既定";
@@ -165,7 +198,7 @@
 "new_task_view.model.qBittorrent.torrent_content_layout.subfolder" = "サブフォルダを作成する";
 "new_task_view.model.qBittorrent.torrent_content_layout.no_subfolder" = "サブフォルダを作成しない";
 "new_task_view.aria2_form.title.allow_overwrite" = "上書きの許可";
-"new_task_view.aria2_form.title.max_download_limit" = "最大下り速度 (B/s)";
+"new_task_view.aria2_form.title.max_download_limit" = "最大下り速度 (%@)";
 "new_task_view.aria2_form.title.conditional_download" = "条件付きダウンロード";
 "new_task_view.aria2_form.title.file_allocation_method" = "ファイル割り当て方法";
 "new_task_view.aria2_form.title.parameterized_URI" = "URI パラメータ化";
@@ -175,7 +208,7 @@
 "new_task_view.aria2_form.title.split_count" = "ファイルあたりの最大接続数";
 "new_task_view.aria2_form.title.min_split_size" = "最小分割サイズ (Bytes)";
 "new_task_view.aria2_form.title.max_connection_per_server" = "サーバあたりの最大接続数";
-"new_task_view.aria2_form.title.lowest_speed_limit" = "最小下り速度 (B/s)";
+"new_task_view.aria2_form.title.lowest_speed_limit" = "最小下り速度 (%@)";
 "new_task_view.aria2_form.title.piece_selection_algorithm" = "ピース選択アルゴリズム";
 "new_task_view.aria2_form.title.http_default_username" = "HTTP ユーザ名の既定値";
 "new_task_view.aria2_form.title.http_default_password" = "HTTP パスワードの既定値";
@@ -184,9 +217,9 @@
 "new_task_view.aria2_form.title.proxy_password" = "プロキシパスワード";
 "new_task_view.aria2_form.title.referer" = "リファラ";
 "new_task_view.aria2_form.title.custom_header" = "カスタムヘッダー";
-"new_task_view.aria2_form.title.max_upload_limit" = "最大上り速度 (B/s)";
+"new_task_view.aria2_form.title.max_upload_limit" = "最大上り速度 (%@)";
 "new_task_view.aria2_form.title.max_peers" = "最大ピア数";
-"new_task_view.aria2_form.title.preferred_download_speed" = "希望する下り速度 (B/s)";
+"new_task_view.aria2_form.title.preferred_download_speed" = "希望する下り速度 (%@)";
 "new_task_view.aria2_form.title.remove_unselected_file" = "選択されていないファイルの削除";
 "new_task_view.aria2_form.title.stop_timeout" = "停止までの待ち時間 (秒)";
 "new_task_view.aria2_form.title.bt_tracker" = "BT トラッカー";
@@ -203,8 +236,8 @@
 "new_task_view.qBittorrent_form.title.root_folder" = "ルートフォルダの作成";
 "new_task_view.qBittorrent_form.title.sequential_download" = "読み取り順にダウンロード";
 "new_task_view.qBittorrent_form.title.first_last_piece_prio" = "先頭と最後のピースを先にダウンロード";
-"new_task_view.qBittorrent_form.title.up_limit" = "上り速度制限 (B/s)";
-"new_task_view.qBittorrent_form.title.dl_limit" = "下り速度制限 (B/s)";
+"new_task_view.qBittorrent_form.title.up_limit" = "上り速度制限 (%@)";
+"new_task_view.qBittorrent_form.title.dl_limit" = "下り速度制限 (%@)";
 "new_task_view.qBittorrent_form.title.ratio_limit" = "共有比上限";
 "new_task_view.qBittorrent_form.title.seeding_time_limit" = "シード時間制限 (分)";
 "new_task_view.transmission_form.title.labels" = "ラベル";
@@ -231,6 +264,8 @@
 // MARK: PagePicker
 "page_picker.title.page" = "ページ (%d / %d)";
 "page_picker.title.upper_bound" = "/ %d";
+"page_picker.accessibility_label.select_page" = "ページを選択";
+"page_picker.accessibility_value.current_page" = "ページ %d が選択中、合計 %d ページ";
 
 // MARK: Placeholder
 "placeholder.no_client_selected" = "クライアント未選択";
@@ -251,6 +286,30 @@
 "general_setting_view.section.title.backup" = "バックアップ";
 "general_setting_view.title.backup_clients" = "クライアントのバックアップを作成する";
 "general_setting_view.title.restore_clients" = "バックアップからクライアントを復元する";
+"general_setting_view.title.manage_savepaths" = "ファイルの保存先管理";
+// AppActivityLogsView
+"app_activity_logs_view.title" = "アプリ動作記録";
+"app_activity_logs_view.accessibility_label.level" = "レベル: %@";
+"app_activity_logs_view.accessibility_label.date" = "日時: %@";
+"app_activity_logs_view.accessibility_label.category" = "カテゴリ: %@";
+// SavepathSettingView
+"savepath_setting_view.title" = "ダウンロードフォルダ";
+"savepath_setting_view.title.savepath_suggestion" = "フォルダ候補";
+"savepath_setting_view.description.savepath_suggestion" = "新規タスクを追加するときにファイルの保存先候補を表示します";
+"savepath_setting_view.title.category_savepath_position" = "カテゴリ保存先の位置";
+"savepath_setting_view.description.category_savepath_position" = "カテゴリで設定したファイルの保存先を候補内のどこに表示するかを選択します";
+"savepath_setting_view.section.title.bookmarks" = "ブックマーク";
+"savepath_setting_view.button.new_savepath" = "保存先を追加";
+"savepath_setting_view.position.hidden" = "非表示";
+"savepath_setting_view.position.top" = "上部";
+"savepath_setting_view.position.bottom" = "下部";
+// AppearanceSettingView
+"appearance_setting_view.title" = "外観";
+"appearance_setting_view.title.color_scheme" = "配色";
+"appearance_setting_view.title.theme_color" = "テーマ色";
+"appearance_setting_view.section.title.tasks" = "タスク";
+"appearance_setting_view.title.show_client_speed" = "クライアント速度の表示";
+"appearance_setting_view.title.show_free_space" = "空き容量の表示";
 // SubscriptionSettingView
 "subscription_setting_view.title" = "サブスクリプション";
 "subscription_setting_view.title.expires_on" = "%@ まで有効";
@@ -265,15 +324,6 @@
 "subscription_setting_view.title.sync_purchases" = "購入履歴を同期する";
 "subscription_setting_view.title.restore_purchases" = "購入履歴を復元する";
 "subscription_setting_view.subtitle.restore_purchases" = "レシートを更新して購入履歴を同期する";
-// AppActivityLogsView
-"app_activity_logs_view.title" = "アプリ動作記録";
-// AppearanceSettingView
-"appearance_setting_view.title" = "外観";
-"appearance_setting_view.title.color_scheme" = "配色";
-"appearance_setting_view.title.theme_color" = "テーマ色";
-"appearance_setting_view.section.title.tasks" = "タスク";
-"appearance_setting_view.title.show_client_speed" = "クライアント速度の表示";
-"appearance_setting_view.title.show_free_space" = "空き容量の表示";
 // AppIconView
 "app_icon_view.title" = "アプリアイコン";
 // AboutView
@@ -298,6 +348,11 @@
 "sidebar.button.edit_client.new" = "新規クライアント";
 "sidebar.button.remove_ads" = "広告非表示";
 "sidebar.button.no_ads_today" = "今日だけ非表示";
+"sidebar.accessibility_label.learn_more_subscription" = "BitRemote+ の詳しい情報";
+"sidebar.accessibility_value.warning_occurred" = "警告発生";
+"sidebar.accessibility_value.loading" = "読み込み中";
+// ClientCell
+"client_cell.accessibility_label.review_warning_message" = "警告メッセージを確認";
 
 // MARK: TaskStatus
 "task.status.name.all" = "すべて";
@@ -372,7 +427,6 @@
 "peer.property.title.port" = "ポート";
 "peer.property.title.connection" = "接続";
 "peer.property.title.flags" = "フラグ";
-"peer.property.title.client" = "クライアント";
 "peer.property.title.relevance" = "関連性";
 "peer.property.title.files" = "ファイル";
 
@@ -422,8 +476,12 @@
 "activity_monitor.board.title.queued_io_jobs" = "待ち I/O ジョブ数";
 "activity_monitor.board.title.average_time_in_queue" = "平均キュー待ち時間";
 "activity_monitor.board.title.total_queued_size" = "総キューサイズ";
+"activity_monitor.accessibility_label.seconds_before" = "%@ 秒前: %@";
+"activity_monitor.accessibility_label.upload_speed_limit" = "上り速度制限: %@";
+"activity_monitor.accessibility_label.download_speed_limit" = "下り速度制限: %@";
 // ClientStatusTray
 "client_status_tray.free_space" = "空き容量";
+"client_status_tray.accessibility_label.connection_status" = "接続状態: %@";
 // ConnectionStatus
 "connection_status.value.unknown" = "不明";
 "connection_status.value.connected" = "接続済み";
@@ -441,6 +499,12 @@
 "task_insight_panel.title.maximum" = "上限 %@";
 "task_insight_panel.title.total" = "合計 %@";
 "task_insight_panel.title.have" = "保有 %@";
+"task_insight_panel.title.downloaded_size" = "ダウンロード済みサイズ";
+"task_insight_panel.title.download_speed" = "下り速度";
+"task_insight_panel.title.download_speed_limit" = "下り速度上限";
+"task_insight_panel.title.uploaded_size" = "アップロード済みサイズ";
+"task_insight_panel.title.upload_speed" = "上り速度";
+"task_insight_panel.title.upload_speed_limit" = "上り速度上限";
 "task_insight_panel.group.title.information" = "情報";
 "task_insight_panel.section.title.content" = "内容";
 "task_insight_panel.section.title.time" = "時間";
@@ -448,12 +512,20 @@
 "task_insight_panel.tab.title.trackers" = "トラッカー";
 "task_insight_panel.title.downloads" = "DLs";
 "task_insight_panel.tab.title.files" = "ファイル";
+"task_insight_panel.accessibility_label.progress_wall" = "未開始: %d、進行中: %d、完了: %d";
+"task_insight_panel.accessibility_label.client_name" = "クライアント名";
+"task_insight_panel.accessibility_label.not_selected" = "未選択";
+"task_insight_panel.accessibility_label.partially_selected" = "一部選択中";
+"task_insight_panel.accessibility_label.all_selected" = "すべて選択中";
 // KeySortPicker
 "key_sort_picker.title.sort" = "ソート";
 "key_sort_picker.title.sort_tasks" = "ソート（タスク）";
 "key_sort_picker.title.sort_trackers" = "ソート（トラッカー）";
 "key_sort_picker.title.sort_peers" = "ソート（ピア）";
 "key_sort_picker.title.sort_files" = "ソート (ファイル)";
+"key_sort_picker.title.more_actions" = "他のアクション";
+"key_sort_picker.accessibility_value.ascending" = "昇順";
+"key_sort_picker.accessibility_value.descending" = "降順";
 // TransferChart
 "transfer_chart.title" = "転送履歴";
 "transfer_chart.title.date" = "日付";
@@ -470,6 +542,15 @@
 
 // FeaturesShowcaseView
 "features_showcase_view.title" = "%@\n新機能紹介";
+
+"features_showcase_view.version150.title.file_system_integration" = "ファイルシステム連携";
+"features_showcase_view.version150.subtitle.file_system_integration" = "OS から BitRemote でファイルを直接開く、または BitRemote に共有して、新規タスクを追加できます。";
+"features_showcase_view.version150.title.savepath_suggestions" = "フォルダ候補";
+"features_showcase_view.version150.subtitle.savepath_suggestions" = "候補からファイルの保存先をすばやく選べるので、毎回入力する必要がありません。ブックマークの保存先に加え、カテゴリで設定した保存先も、入力候補に表示されます。";
+"features_showcase_view.version150.title.tracker_filtering" = "トラッカーで絞り込み";
+"features_showcase_view.version150.subtitle.tracker_filtering" = "トラッカーでタスクを絞り込み、特定のトラッカーのタスクを表示・管理できます。";
+"features_showcase_view.version150.title.accessibility_improvements" = "アクセシビリティの改善";
+"features_showcase_view.version150.subtitle.accessibility_improvements" = "VoiceOver、音声コントロールと視差効果を減らす機能への対応を改善しました。";
 
 "features_showcase_view.version140.title.task_insight_panel" = "タスクの詳細情報パネル";
 "features_showcase_view.version140.subtitle.task_insight_panel" = "ダウンロードタスクの進行状況や動作の傾向を直感的に把握できます。さらにトラッカーやピア、ファイル情報も確認でき、全体像を見渡せます。";
@@ -509,5 +590,5 @@
 "features_showcase_view.version100.subtitle.diverse_client_support" = "aria2、qBit、Trans、Synology、QNAP など、人気ダウンロードツールとシームレスに連携。";
 "features_showcase_view.version100.title.comprehensive_task_management" = "包括的なタスク管理";
 "features_showcase_view.version100.subtitle.comprehensive_task_management" = "ダウンロードタスクの一時停止、再開、削除、新規追加など、簡単に制御できます。";
-"features_showcase_view.version100.title.smart_filtering_sorting" = "スマートなフィルタリングと並べ替え";
+"features_showcase_view.version100.title.smart_filtering_sorting" = "スマートな絞り込みと並べ替え";
 "features_showcase_view.version100.subtitle.smart_filtering_sorting" = "ステータス、カテゴリ、タグでダウンロードタスクを整理し、多様な条件で効率的に並べ替えができます。";
