@@ -3,10 +3,8 @@
 <h4 align="center">An Apple platforms app to control your downloaders remotely.</h4>
 
 <p align="center">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/2327b2ce-4c3f-4223-ab9a-5129e5032f17">
-<img src="https://github.com/user-attachments/assets/040be940-4d84-49ae-9561-15c57eb9ab4a" width="412" alt="BitRemote app icon.">
-</picture>
+<img src=".github/images/icon-light.png#gh-light-mode-only" width="512" alt="BitRemote app icon.">
+<img src=".github/images/icon-dark.png#gh-dark-mode-only" width="512" alt="BitRemote app icon.">
 </p>
 
 <p align="center">

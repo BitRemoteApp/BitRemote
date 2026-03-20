@@ -324,6 +324,16 @@
 "subscription_setting_view.title.sync_purchases" = "Синхронизация покупок";
 "subscription_setting_view.title.restore_purchases" = "Восстановить покупки";
 "subscription_setting_view.subtitle.restore_purchases" = "Обновить чек и синхронизировать покупки";
+// PaywallView
+"paywall_view.title.onetime_purchase_plan" = "One-Time Purchase Plan";
+"paywall_view.onetime.title" = "Done with subscriptions?";
+"paywall_view.onetime.subtitle" = "Take a look at this one-time purchase plan instead, and you might like it better.";
+"paywall_view.onetime.title.product_description" = "Unlock all features, including future feature updates.";
+"paywall_view.onetime.title.disclaimer" = "Disclaimer";
+"paywall_view.onetime.title.disclaimer_content" = "BitRemote+ Advanced is a one-time purchase plan that unlocks exclusive features available in the app at the time of purchase. Continued access depends on the app remaining available and compatible with supported platforms and devices. Features and services may change or be discontinued over time.";
+"paywall_view.onetime.button.purchase" = "Purchase";
+"paywall_view.onetime.button.purchased" = "Purchased";
+"paywall_view.onetime.button.pay_once" = "Pay once, unlock all features";
 // AppIconView
 "app_icon_view.title" = "Иконка приложения";
 // AboutView
@@ -543,13 +553,13 @@
 // FeaturesShowcaseView
 "features_showcase_view.title" = "Открыть в\n%@";
 
-"features_showcase_view.version150.title.file_system_integration" = "File system integration";
+"features_showcase_view.version150.title.file_system_integration" = "File System Integration";
 "features_showcase_view.version150.subtitle.file_system_integration" = "Open files directly from your operating system in BitRemote or share them to BitRemote to add a new task.";
-"features_showcase_view.version150.title.savepath_suggestions" = "Savepath suggestions";
+"features_showcase_view.version150.title.savepath_suggestions" = "Savepath Suggestions";
 "features_showcase_view.version150.subtitle.savepath_suggestions" = "Choose a savepath faster with suggestions, instead of typing it every time. Use bookmarked savepaths, and include savepaths from your categories in the order you prefer.";
-"features_showcase_view.version150.title.tracker_filtering" = "Tracker filtering";
+"features_showcase_view.version150.title.tracker_filtering" = "Tracker Filtering";
 "features_showcase_view.version150.subtitle.tracker_filtering" = "Filter tasks by tracker so you can view and manage tasks for a specific tracker.";
-"features_showcase_view.version150.title.accessibility_improvements" = "Accessibility improvements";
+"features_showcase_view.version150.title.accessibility_improvements" = "Accessibility Improvements";
 "features_showcase_view.version150.subtitle.accessibility_improvements" = "Improved VoiceOver support, with better support for Voice Control and Reduce Motion.";
 
 "features_showcase_view.version140.title.task_insight_panel" = "Панель анализа задач";
