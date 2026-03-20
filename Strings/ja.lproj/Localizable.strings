@@ -324,6 +324,16 @@
 "subscription_setting_view.title.sync_purchases" = "購入履歴を同期する";
 "subscription_setting_view.title.restore_purchases" = "購入履歴を復元する";
 "subscription_setting_view.subtitle.restore_purchases" = "レシートを更新して購入履歴を同期する";
+// PaywallView
+"paywall_view.title.onetime_purchase_plan" = "一度購入プラン";
+"paywall_view.onetime.title" = "サブスクにはもううんざり？";
+"paywall_view.onetime.subtitle" = "こちらのプランなら、よりご満足いただけるかもしれません。";
+"paywall_view.onetime.title.product_description" = "今後の機能アップデートを含む、すべての機能をご利用いただけます。";
+"paywall_view.onetime.title.disclaimer" = "免責事項";
+"paywall_view.onetime.title.disclaimer_content" = "BitRemote+ Advanced は、一度のご購入で、購入時点でアプリ内にて提供されている限定機能をご利用いただけるプランです。継続してご利用いただけるかどうかは、アプリの提供が継続されること、および対応プラットフォームや対応デバイスとの互換性が維持されることに依存します。機能やサービスは、今後変更または終了となる場合があります。";
+"paywall_view.onetime.button.purchase" = "購入する";
+"paywall_view.onetime.button.purchased" = "購入済み";
+"paywall_view.onetime.button.pay_once" = "支払いは一度きり";
 // AppIconView
 "app_icon_view.title" = "アプリアイコン";
 // AboutView

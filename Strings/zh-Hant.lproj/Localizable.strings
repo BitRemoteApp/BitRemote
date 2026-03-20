@@ -324,6 +324,16 @@
 "subscription_setting_view.title.sync_purchases" = "同步已購買項目";
 "subscription_setting_view.title.restore_purchases" = "回復已購買項目";
 "subscription_setting_view.subtitle.restore_purchases" = "更新收據並同步已購買項目";
+// PaywallView
+"paywall_view.title.onetime_purchase_plan" = "單次購買方案";
+"paywall_view.onetime.title" = "已經對訂閱制忍無可忍了嗎？";
+"paywall_view.onetime.subtitle" = "不妨來看看這個單次購買方案，也許你會更感興趣";
+"paywall_view.onetime.title.product_description" = "解鎖所有專屬功能，包括未來發佈的功能更新在內";
+"paywall_view.onetime.title.disclaimer" = "免責聲明";
+"paywall_view.onetime.title.disclaimer_content" = "BitRemote+ Advanced 是一項單次購買方案，可解鎖購買時應用程式內提供的專屬功能。是否能持續使用，取決於應用程式是否持續可用，以及是否仍與受支援的平台和裝置相容。功能與服務可能會隨時間變更或停止提供。";
+"paywall_view.onetime.button.purchase" = "購買";
+"paywall_view.onetime.button.purchased" = "已購買";
+"paywall_view.onetime.button.pay_once" = "一次支付，全部解鎖";
 // AppIconView
 "app_icon_view.title" = "App 圖案";
 // AboutView

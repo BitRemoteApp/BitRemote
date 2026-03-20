@@ -12,8 +12,12 @@
 "app.copyright" = "Copyright © 2026 Ark Studios LLC.";
 "app.short_version" = "%@ (%@)";
 "app.sns" = "SNS";
+"app.one_mark" = "1";
 "app.plus_mark" = "+";
-"app.subscription_name" = "BitRemote+";
+"app.subscription.plus.title" = "BitRemote+";
+"app.subscription.plus.spell_out" = "BitRemote Plus";
+"app.subscription.plus_advanced.title" = "BitRemote+ Advanced";
+"app.subscription.plus_advanced.spell_out" = "BitRemote Plus Advanced";
 
 // Contact links
 "app.contact.link.website" = "https://bitremote.app";
@@ -52,6 +56,7 @@
 "app.acknowledgement.link.xml_coder" = "https://github.com/CoreOffice/XMLCoder";
 "app.acknowledgement.link.whats_new_kit" = "https://github.com/SvenTiigi/WhatsNewKit";
 "app.acknowledgement.link.admob_swiftUI" = "https://github.com/dearhui/AdmobSwiftUI";
+"app.acknowledgement.link.confetti_swiftUI" = "https://github.com/simibac/ConfettiSwiftUI";
 "app.acknowledgement.link.sf_safe_symbols" = "https://github.com/SFSafeSymbols/SFSafeSymbols";
 "app.acknowledgement.link.swift_navigation" = "https://github.com/pointfreeco/swift-navigation";
 "app.acknowledgement.link.system_notification" = "https://github.com/danielsaidi/SystemNotification";
@@ -68,6 +73,7 @@
 "app.acknowledgement.title.xml_coder" = "XMLCoder";
 "app.acknowledgement.title.whats_new_kit" = "WhatsNewKit";
 "app.acknowledgement.title.admob_swiftUI" = "AdmobSwiftUI";
+"app.acknowledgement.title.confetti_swiftUI" = "ConfettiSwiftUI";
 "app.acknowledgement.title.sf_safe_symbols" = "SFSafeSymbols";
 "app.acknowledgement.title.swift_navigation" = "Swift Navigation";
 "app.acknowledgement.title.system_notification" = "SystemNotification";
@@ -76,6 +82,7 @@
 
 // MARK: Common
 "common.ok" = "OK";
+"common.nil" = "nil";
 "common.infinity" = "∞";
 "common.ellipsis" = "...";
 "common.colon_separator" = ": ";
