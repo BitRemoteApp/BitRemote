@@ -6,6 +6,14 @@
 
 */
 
+// MARK: Accessibility
+"accessibility.upload" = "Upload: %@";
+"accessibility.download" = "Download: %@";
+"accessibility.per_second" = "%@ per second";
+"accessibility.bytes_per_second" = "Bytes per second";
+"accessibility.times" = "%@ times %@";
+"accessibility.hint.double_tap_select" = "Double-tap to select";
+
 // MARK: AlertView
 "loading_view.title.loading" = "Loading...";
 "loading_view.title.preparing_database" = "Preparing the database...";
@@ -43,10 +51,14 @@
 "category.display_name.none" = "None";
 "category.display_name.custom" = "Custom";
 
+// MARK: TrackerDomain
+"tracker_domain.display_name.other" = "Other";
+
 // MARK: Common
 "common.title.done" = "Done";
 "common.title.select" = "Select";
 "common.title.cancel" = "Cancel";
+"common.title.continue" = "Continue";
 "common.title.edit" = "Edit";
 "common.title.delete" = "Delete";
 "common.title.website" = "Website";
@@ -61,16 +73,21 @@
 "common.title.leeches" = "Leeches";
 "common.title.tag" = "Tag";
 "common.title.category" = "Category";
+"common.title.client" = "Client";
 "common.title.progress" = "Progress";
 "common.title.total_size" = "Total Size";
 "common.title.download" = "Download";
+"common.title.savepath" = "Savepath";
 "common.title.download_speed" = "DL Speed";
 "common.title.downloaded_size" = "DL Size";
 "common.title.upload_speed" = "UP Speed";
 "common.title.uploaded_size" = "UP Size";
 "common.title.upload" = "Upload";
+"common.title.bytes_per_second" = "B/s";
 "common.title.learn_more" = "Learn more";
 "common.title.view_error_info" = "View Error Info";
+"common.title.new_task" = "New Task";
+"common.title.filters" = "Filters";
 
 // MARK: Dialog
 "dialog.title.drop_database" = "You will lose all your data in this app.\nAre you sure to drop the database?";
@@ -96,10 +113,12 @@
 "edit_client_view.title.one_time_password" = "One-time password";
 "edit_client_view.title.disable_certificate_evaluation" = "Disable certificate evaluation";
 "edit_client_view.section.description.exclusive_client_type" = "BitRemote+ membership is required to use this exclusive client type.";
-"edit_client_view.section.description.invalid_host_format" = "The host format is expected to be **\"%@\"**. Please verify the information you’ve entered, as it might be incorrect.";
+"edit_client_view.section.description.invalid_host_format" = "The host format is expected to be **\"%@\"**. Please verify the information you've entered, as it might be incorrect.";
 "edit_client_view.section.description.one_time_password" = "A one-time password may be utilized as part of some security features, such as two-factor authentication. After a successful login attempt, this field will be automatically reset to empty.";
 "edit_client_view.section.description.http_not_secure_message" = "Please be aware that using HTTP is not a secure way to transmit data. It's highly recommended to use HTTPS to ensure the safety of your information and protect your privacy.";
 "edit_client_view.section.description.disable_certificate_evaluation_message" = "Disabling certificate evaluation can expose you to significant security risks, such as vulnerability to man-in-the-middle attacks and data interception. Proceed only if you fully understand the implications.";
+"edit_client_view.accessibility_hint.review_messages" = "Before continuing, please review the following message:";
+"edit_client_view.accessibility_hint.exclusive_client_type" = "Unavailable: BitRemote+ exclusive client type.";
 
 // MARK: ErrorInfoView
 "error_info_view.title" = "Error info";
@@ -114,16 +133,25 @@
 "error_info_view.placeholder.solution" = "We currently don't have any suggestions for this error.";
 "error_info_view.placeholder.context" = "There is no context included in this error.";
 
+// MARK: ClientPickerView
+"client_picker_view.title" = "Handle files";
+"client_picker_view.description.instruction" = "You've opened files with BitRemote. Please select which client should handle these files.";
+"client_picker_view.section_title.select_client" = "Select client";
+"client_picker_view.section_title.files" = "Files (%lld)";
+"client_picker_view.label.hash" = "Hash: %@";
+"client_picker_view.warning.selected_client_logging_in" = "This client is still logging in. You may continue, but the operation might fail.";
+"client_picker_view.warning.selected_client_failed" = "This client failed to connect. Please resolve the connection issue before continuing.";
+"client_picker_view.warning.add_client_first" = "Please add a client before opening files.";
+
 // MARK: FiltersView
-"filters_view.title.filters" = "Filters";
 "filters_view.section_title.status" = "Status";
+"filters_view.section_title.tracker" = "Tracker";
 "filters_view.button.info" = "Info";
 "filters_view.button.new_category" = "New Category";
 "filters_view.button.new_tag" = "New Tag";
 "filters_view.info_view.title.name" = "Name";
 "filters_view.info_view.section.title.setting" = "Setting";
 // CategoryInfoView
-"category_info_view.title.savepath" = "Savepath";
 "category_info_view.prompt.name" = "Category name";
 "category_info_view.prompt.savepath" = "/downloads";
 "category_info_view.placeholder.name" = "New category";
@@ -137,18 +165,23 @@
 "menu_bar_extra.button.quit" = "Quit";
 
 // MARK: NewTaskView
-"new_task_view.title" = "New Task";
 "new_task_view.title.api_available" = "Available from %@";
 "new_task_view.title.api_unavailable" = "Unavailable from %@";
 "new_task_view.title.relevant_files" = "Relevant file(s):";
 "new_task_view.title.relevant_file_line" = "- %@";
 "new_task_view.title.processing_requests" = "Processing requests... (%@/%@)";
 "new_task_view.section.title.options" = "Options";
-"new_task_view.section.title.default_savepath" = "If you don't specify a folder, the default download location **\"%@\"** will be used automatically.";
+"new_task_view.section.title.path" = "Path";
+"new_task_view.section.title.default_savepath" = "If you don't specify a path, the default download location **\"%@\"** will be used automatically.";
 "new_task_view.section.title.default_savepath_placeholder" = "(loading...)";
-"new_task_view.title.savepath" = "Download folder";
 "new_task_view.prompt.savepath" = "/downloads";
 "new_task_view.prompt.nas_savepath" = "SharedFolder/Downloads";
+"new_task_view.savepath_picker.option.custom" = "Custom";
+"new_task_view.savepath_picker.title.custom_savepath" = "Custom savepath";
+"new_task_view.savepath_picker.button.add_to_bookmarks" = "Add to bookmarks";
+"new_task_view.savepath_picker.status.added_to_bookmarks" = "Added to bookmarks";
+"new_task_view.savepath_picker.status.already_in_bookmarks" = "Already in bookmarks";
+"new_task_view.savepath_picker.status.failed_to_add_to_bookmarks" = "Failed to add to bookmarks";
 "new_task_view.title.cookies" = "Cookies";
 "new_task_view.title.paused" = "Add as paused";
 "new_task_view.model.source_format.link" = "Link";
@@ -165,7 +198,7 @@
 "new_task_view.model.qBittorrent.torrent_content_layout.subfolder" = "Creates subfolder";
 "new_task_view.model.qBittorrent.torrent_content_layout.no_subfolder" = "Don't create subfolder";
 "new_task_view.aria2_form.title.allow_overwrite" = "Allow overwrite";
-"new_task_view.aria2_form.title.max_download_limit" = "Max download limit (B/s)";
+"new_task_view.aria2_form.title.max_download_limit" = "Max download limit (%@)";
 "new_task_view.aria2_form.title.conditional_download" = "Conditional download";
 "new_task_view.aria2_form.title.file_allocation_method" = "File allocation method";
 "new_task_view.aria2_form.title.parameterized_URI" = "Parameterized URI";
@@ -175,7 +208,7 @@
 "new_task_view.aria2_form.title.split_count" = "Split count";
 "new_task_view.aria2_form.title.min_split_size" = "Min split size (Bytes)";
 "new_task_view.aria2_form.title.max_connection_per_server" = "Max connection per server";
-"new_task_view.aria2_form.title.lowest_speed_limit" = "Lowest speed limit (B/s)";
+"new_task_view.aria2_form.title.lowest_speed_limit" = "Lowest speed limit (%@)";
 "new_task_view.aria2_form.title.piece_selection_algorithm" = "Piece selection algorithm";
 "new_task_view.aria2_form.title.http_default_username" = "HTTP default username";
 "new_task_view.aria2_form.title.http_default_password" = "HTTP default password";
@@ -184,9 +217,9 @@
 "new_task_view.aria2_form.title.proxy_password" = "Proxy password";
 "new_task_view.aria2_form.title.referer" = "Referer";
 "new_task_view.aria2_form.title.custom_header" = "Custom header";
-"new_task_view.aria2_form.title.max_upload_limit" = "Max upload limit (B/s)";
+"new_task_view.aria2_form.title.max_upload_limit" = "Max upload limit (%@)";
 "new_task_view.aria2_form.title.max_peers" = "Max peers";
-"new_task_view.aria2_form.title.preferred_download_speed" = "Preferred download speed (B/s)";
+"new_task_view.aria2_form.title.preferred_download_speed" = "Preferred download speed (%@)";
 "new_task_view.aria2_form.title.remove_unselected_file" = "Remove unselected file";
 "new_task_view.aria2_form.title.stop_timeout" = "Stop timeout (secs)";
 "new_task_view.aria2_form.title.bt_tracker" = "BT tracker";
@@ -203,8 +236,8 @@
 "new_task_view.qBittorrent_form.title.root_folder" = "Create root folder";
 "new_task_view.qBittorrent_form.title.sequential_download" = "Enable sequential download";
 "new_task_view.qBittorrent_form.title.first_last_piece_prio" = "Prioritize download first last piece";
-"new_task_view.qBittorrent_form.title.up_limit" = "Upload rate limit (B/s)";
-"new_task_view.qBittorrent_form.title.dl_limit" = "Download rate limit (B/s)";
+"new_task_view.qBittorrent_form.title.up_limit" = "Upload rate limit (%@)";
+"new_task_view.qBittorrent_form.title.dl_limit" = "Download rate limit (%@)";
 "new_task_view.qBittorrent_form.title.ratio_limit" = "Share ratio limit";
 "new_task_view.qBittorrent_form.title.seeding_time_limit" = "Seeding time limit (mins)";
 "new_task_view.transmission_form.title.labels" = "Labels";
@@ -212,7 +245,7 @@
 "new_task_view.transmission_form.title.peer_limit" = "Peer limit";
 "new_task_view.transmission_form.title.bandwidth_priority" = "Bandwidth priority";
 "new_task_view.synology_download_station_form.title.FTP_authentication" = "FTP authentication";
-"new_task_view.QNAP_download_station_form.title.temp_savepath" = "Temporary folder";
+"new_task_view.QNAP_download_station_form.title.temp_savepath" = "Temp savepath";
 "new_task_view.torrent_picker.button.select_files" = "Select files";
 "new_task_view.torrent_picker.button.reselect_files" = "Reselect files";
 "new_task_view.category_picker.title.custom_category" = "Custom category";
@@ -231,6 +264,8 @@
 // MARK: PagePicker
 "page_picker.title.page" = "Page (%d / %d)";
 "page_picker.title.upper_bound" = "/ %d";
+"page_picker.accessibility_label.select_page" = "Select page";
+"page_picker.accessibility_value.current_page" = "Current page is %d out of %d.";
 
 // MARK: Placeholder
 "placeholder.no_client_selected" = "No Client Selected";
@@ -251,8 +286,23 @@
 "general_setting_view.section.title.backup" = "Backup";
 "general_setting_view.title.backup_clients" = "Export clients backup";
 "general_setting_view.title.restore_clients" = "Restore clients from backup";
+"general_setting_view.title.manage_savepaths" = "Manage savepaths";
 // AppActivityLogsView
 "app_activity_logs_view.title" = "App activity logs";
+"app_activity_logs_view.accessibility_label.level" = "Level: %@";
+"app_activity_logs_view.accessibility_label.date" = "Date: %@";
+"app_activity_logs_view.accessibility_label.category" = "Category: %@";
+// SavepathSettingView
+"savepath_setting_view.title" = "Savepaths";
+"savepath_setting_view.title.savepath_suggestion" = "Savepath suggestion";
+"savepath_setting_view.description.savepath_suggestion" = "Show suggested savepaths when adding a new task.";
+"savepath_setting_view.title.category_savepath_position" = "Category savepath position";
+"savepath_setting_view.description.category_savepath_position" = "Choose where savepaths defined in your categories appear in suggestions.";
+"savepath_setting_view.section.title.bookmarks" = "Bookmarks";
+"savepath_setting_view.button.new_savepath" = "New savepath";
+"savepath_setting_view.position.hidden" = "Hidden";
+"savepath_setting_view.position.top" = "Top";
+"savepath_setting_view.position.bottom" = "Bottom";
 // AppearanceSettingView
 "appearance_setting_view.title" = "Appearance";
 "appearance_setting_view.title.color_scheme" = "Color scheme";
@@ -298,6 +348,11 @@
 "sidebar.button.edit_client.new" = "New Client";
 "sidebar.button.remove_ads" = "Remove ads";
 "sidebar.button.no_ads_today" = "No ads for today";
+"sidebar.accessibility_label.learn_more_subscription" = "Learn more about BitRemote+";
+"sidebar.accessibility_value.warning_occurred" = "Warning occurred";
+"sidebar.accessibility_value.loading" = "Loading";
+// ClientCell
+"client_cell.accessibility_label.review_warning_message" = "Review warning message";
 
 // MARK: TaskStatus
 "task.status.name.all" = "All";
@@ -372,7 +427,6 @@
 "peer.property.title.port" = "Port";
 "peer.property.title.connection" = "Connection";
 "peer.property.title.flags" = "Flags";
-"peer.property.title.client" = "Client";
 "peer.property.title.relevance" = "Relevance";
 "peer.property.title.files" = "Files";
 
@@ -422,8 +476,12 @@
 "activity_monitor.board.title.queued_io_jobs" = "Queued I/O jobs";
 "activity_monitor.board.title.average_time_in_queue" = "Average time in queue";
 "activity_monitor.board.title.total_queued_size" = "Total queued size";
+"activity_monitor.accessibility_label.upload_speed_limit" = "Upload speed limit: %@";
+"activity_monitor.accessibility_label.download_speed_limit" = "Download speed limit: %@";
+"activity_monitor.accessibility_label.seconds_before" = "%@ seconds before: %@";
 // ClientStatusTray
 "client_status_tray.free_space" = "Free space";
+"client_status_tray.accessibility_label.connection_status" = "Connection status: %@";
 // ConnectionStatus
 "connection_status.value.unknown" = "Unknown";
 "connection_status.value.connected" = "Connected";
@@ -441,6 +499,12 @@
 "task_insight_panel.title.maximum" = "%@ max";
 "task_insight_panel.title.total" = "%@ total";
 "task_insight_panel.title.have" = "have %@";
+"task_insight_panel.title.downloaded_size" = "Downloaded Size";
+"task_insight_panel.title.download_speed" = "Download Speed";
+"task_insight_panel.title.download_speed_limit" = "Download Speed Limit";
+"task_insight_panel.title.uploaded_size" = "Uploaded Size";
+"task_insight_panel.title.upload_speed" = "Upload Speed";
+"task_insight_panel.title.upload_speed_limit" = "Upload Speed Limit";
 "task_insight_panel.group.title.information" = "Information";
 "task_insight_panel.section.title.content" = "Content";
 "task_insight_panel.section.title.time" = "Time";
@@ -448,12 +512,20 @@
 "task_insight_panel.tab.title.trackers" = "Trackers";
 "task_insight_panel.title.downloads" = "DLs";
 "task_insight_panel.tab.title.files" = "Files";
+"task_insight_panel.accessibility_label.progress_wall" = "Not started: %d, In progress: %d, Finished: %d";
+"task_insight_panel.accessibility_label.client_name" = "Client name";
+"task_insight_panel.accessibility_label.not_selected" = "Not selected";
+"task_insight_panel.accessibility_label.partially_selected" = "Partially selected";
+"task_insight_panel.accessibility_label.all_selected" = "All selected";
 // KeySortPicker
 "key_sort_picker.title.sort" = "Sort";
 "key_sort_picker.title.sort_tasks" = "Sort (Tasks)";
 "key_sort_picker.title.sort_trackers" = "Sort (Trackers)";
 "key_sort_picker.title.sort_peers" = "Sort (Peers)";
 "key_sort_picker.title.sort_files" = "Sort (Files)";
+"key_sort_picker.title.more_actions" = "More actions";
+"key_sort_picker.accessibility_value.ascending" = "Ascending";
+"key_sort_picker.accessibility_value.descending" = "Descending";
 // TransferChart
 "transfer_chart.title" = "Transfer history";
 "transfer_chart.title.date" = "Date";
@@ -470,6 +542,15 @@
 
 // FeaturesShowcaseView
 "features_showcase_view.title" = "Discover features in\n%@";
+
+"features_showcase_view.version150.title.file_system_integration" = "File system integration";
+"features_showcase_view.version150.subtitle.file_system_integration" = "Open files directly from your operating system in BitRemote or share them to BitRemote to add a new task.";
+"features_showcase_view.version150.title.savepath_suggestions" = "Savepath suggestions";
+"features_showcase_view.version150.subtitle.savepath_suggestions" = "Choose a savepath faster with suggestions, instead of typing it every time. Use bookmarked savepaths, and include savepaths from your categories in the order you prefer.";
+"features_showcase_view.version150.title.tracker_filtering" = "Tracker filtering";
+"features_showcase_view.version150.subtitle.tracker_filtering" = "Filter tasks by tracker so you can view and manage tasks for a specific tracker.";
+"features_showcase_view.version150.title.accessibility_improvements" = "Accessibility improvements";
+"features_showcase_view.version150.subtitle.accessibility_improvements" = "Improved VoiceOver support, with better support for Voice Control and Reduce Motion.";
 
 "features_showcase_view.version140.title.task_insight_panel" = "Task Insight Panel";
 "features_showcase_view.version140.subtitle.task_insight_panel" = "Gain clear visibility into your download tasks with real-time progress and performance information. Trackers, peers, and files can also be reviewed for a complete view.";
